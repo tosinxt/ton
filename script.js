@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Handle loading screen
+    handleLoadingScreen();
+    
     // Initialize particles.js
     initParticles();
     
@@ -353,6 +356,22 @@ function initScrollAnimations() {
             }
         });
     });
+}
+
+// Handle loading screen animation and hiding
+function handleLoadingScreen() {
+    const loadingScreen = document.getElementById('loading-screen');
+    
+    // Simulate loading time (you can replace this with actual loading logic)
+    setTimeout(() => {
+        // Fade out loading screen
+        loadingScreen.style.opacity = '0';
+        
+        // Hide loading screen after animation completes
+        setTimeout(() => {
+            loadingScreen.style.visibility = 'hidden';
+        }, 500);
+    }, 3000); // 3 seconds loading time
 }
 
 // Add some fun interactive elements
