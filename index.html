@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TON Staking | Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particles-container" id="particles-js"></div>
+    
+    <header>
+        <div class="logo">
+            <img src="https://ton.org/download/ton_symbol.svg" alt="TON Logo" class="ton-logo">
+            <span>TON Staking</span>
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>TON Staking <span class="highlight">Revolution</span></h1>
+                <h2>100% Returns in Just 4 Hours</h2>
+                <div class="countdown-container">
+                    <h3>Launching in</h3>
+                    <div id="countdown">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <span class="label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <span class="label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <span class="label">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <span class="label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-container">
+                    <a href="https://t.me/" class="cta-button">
+                        <i class="fab fa-telegram"></i> Join Telegram
+                    </a>
+                    <button class="notify-button">Get Notified</button>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="ton-coin">
+                    <img src="https://ton.org/download/ton_symbol.svg" alt="TON Coin" class="ton-coin-img">
+                    <div class="glow"></div>
+                </div>
+                <div class="staking-diagram">
+                    <div class="stake-box">
+                        <span>Stake</span>
+                        <div class="amount">2 TON</div>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="return-box">
+                        <span>Return</span>
+                        <div class="amount">4 TON</div>
+                    </div>
+                    <div class="time-indicator">4 Hours</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Our Platform</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Our revolutionary TON staking platform leverages the power of The Open Network blockchain to provide unprecedented returns on your investment.</p>
+                    <p>Stake just 2 TON and receive 100% returns in only 4 hours, all through our secure Telegram Web App.</p>
+                    <div class="tech-features">
+                        <div class="tech-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Smart Contracts</span>
+                        </div>
+                        <div class="tech-feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Lightning Fast Returns</span>
+                        </div>
+                        <div class="tech-feature">
+                            <i class="fas fa-robot"></i>
+                            <span>Automated Payouts</span>
+                        </div>
+                        <div class="tech-feature">
+                            <i class="fas fa-lock"></i>
+                            <span>Telegram Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ton-info">
+                    <h3>Why TON?</h3>
+                    <ul>
+                        <li>Fast transaction speeds</li>
+                        <li>Low gas fees</li>
+                        <li>Secure blockchain technology</li>
+                        <li>Telegram ecosystem integration</li>
+                        <li>Growing adoption worldwide</li>
+                    </ul>
+                    <div class="ton-price">
+                        <span>Current TON Price:</span>
+                        <div id="ton-price-display">Loading...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>How It Works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Connect Wallet</h3>
+                    <p>Link your TON wallet through our secure Telegram Web App interface.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Stake 2 TON</h3>
+                    <p>Deposit your TON coins into our smart contract with just a few clicks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h3>Wait 4 Hours</h3>
+                    <p>Our algorithm works to generate returns while you wait.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Receive 4 TON</h3>
+                    <p>Get your original stake plus 100% returns automatically sent to your wallet.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Be the first to know when we launch. Get exclusive early access and bonuses!</p>
+                <form id="notify-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="newsletter-decoration">
+                <div class="floating-coins">
+                    <img src="https://ton.org/download/ton_symbol.svg" alt="TON Coin" class="floating-coin coin1">
+                    <img src="https://ton.org/download/ton_symbol.svg" alt="TON Coin" class="floating-coin coin2">
+                    <img src="https://ton.org/download/ton_symbol.svg" alt="TON Coin" class="floating-coin coin3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://ton.org/download/ton_symbol.svg" alt="TON Logo" class="ton-logo-small">
+                <span>TON Staking</span>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Platform</h4>
+                    <a href="#">How it Works</a>
+                    <a href="#">Security</a>
+                    <a href="#">Roadmap</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <a href="https://ton.org/" target="_blank">TON Blockchain</a>
+                    <a href="https://t.me/" target="_blank">Telegram Channel</a>
+                    <a href="#">Documentation</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TON Staking. All rights reserved.</p>
+            <p class="disclaimer">This platform is for demonstration purposes only. Actual returns may vary.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="notify-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Get Notified on Launch</h2>
+            <p>Enter your details to receive updates and early access:</p>
+            <form id="modal-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telegram">Telegram Username (optional)</label>
+                    <input type="text" id="telegram" placeholder="@username">
+                </div>
+                <button type="submit" class="submit-btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
